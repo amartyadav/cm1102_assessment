@@ -23,13 +23,17 @@ generateHealth = function(c){
 }
 
 
-#storing damage inflicted by each character 100 times
+#storing damage inflicted by each character 10 times
+manman_damage_multiplier = 1.0
+ratman_damage_multiplier = 1.8
+
 x <- c(1:10) 
 all_prob <- c(dnorm(x, mean=5, sd=3)) 
 n = 10 # number of times the damage is inflicted by the character
 damageManMan = replicate(n, sample(x, size=1, replace=TRUE, prob=all_prob), simplify=TRUE)
+damageManMan = damageManMan * manman_damage_multiplier
 damageRatMan = replicate(n, sample(x, size=1, replace=TRUE, prob=all_prob), simplify=TRUE)
-
+damageRatMan = damageRatMan * ratman_damage_multiplier
 
 
 
@@ -48,7 +52,7 @@ ratman_recovery = sample(x, size=1, prob = weights, replace = TRUE)
 
 
 
-#updating health for both characters for steps 2 to 100 based on damage and recovery
+#updating health for both characters for steps 2 to 10 based on damage and recovery
 
 k <- 1
 for(n in 2:10){

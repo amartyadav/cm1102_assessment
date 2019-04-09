@@ -7,7 +7,7 @@ all_prob <- c(dnorm(x, mean=5, sd=3)) # storing the normal probabilities calcula
 
 n = 100 # number of times the damage is inflicted by the character
 
-results = c(replicate(n, sample(x, size=1, replace=TRUE, prob=all_prob), simplify=FALSE))
+results = replicate(n, sample(x, size=1, replace=TRUE, prob=all_prob), simplify=TRUE)
 # replicating(running the sample() function n number of times) and storing the results of each time in a vector called 'results'.
 # the sample function takes the vector x as input to choose from each time based on the probability weights in the prob argument which takes in the all_prob vector as input.
 # the vectors x and all_prob in sample() are of the same size with each element in x having the corresponding probability(weight) in the all_prob vector. It corresponds on the basis of indices.
