@@ -1,5 +1,5 @@
 #damage using normal probability, with mean = 5, and sd = 3, i.e. 5 being the highest
-#damage that the player can inflict and it get lower symetrically on either sides. 
+#damage that the player can inflict and it gets lower symetrically on either sides. 
 
 x <- c(1:10) # value of x(value of damage that we need to calculate the normal probability on)
 

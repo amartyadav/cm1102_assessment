@@ -8,7 +8,7 @@ ratman_health_multiplier = 0.3
 manman_initial_health = generateHealth(manman_health_multiplier)
 
 generateHealth = function(c){
-  H0 = ceiling(50*(runif(1)+1))*manman_health_multiplier ; H0
+  H0 = ceiling(50*(runif(1)+1))*c ; H0
 }
 
 
@@ -25,11 +25,6 @@ ratman_initial_health = generateHealth(ratman_health_multiplier)
 generateHealth = function(c){
   H0 = ceiling(50*(runif(1)+1))*c ; H0
 }
-
-
-
-
-
 
 
 
