@@ -34,6 +34,9 @@ damagePlayerOne <- c(1:10)
 healthPlayerTwo <- c(1:10)
 damagePlayerTwo <- c(1:10)
 
+generateHealth = function(c){
+  H0 = ceiling(50*(runif(1)+1))*c ; H0
+}
 
 
 #playerOne initial health
@@ -88,8 +91,10 @@ for(n in 2:10){
 print(healthPlayerOne[10])
 print(healthPlayerTwo[10])
 
-plot(NULL, xlim=c(1,10), ylim=c(0,150), ylab="Health", xlab="time")
+plot(NULL, xlim=c(1,10), ylim=c(-75,150), ylab="Health", xlab="time")
 
+points(c(1:10), healthPlayerOne, col='red')
 lines(c(1:10), healthPlayerOne, type='l', col='red')
+points(c(1:10), healthPlayerTwo, col='blue')
 lines(c(1:10), healthPlayerTwo, type='l', col='blue')
 
