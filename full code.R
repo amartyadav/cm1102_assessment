@@ -1,3 +1,11 @@
+#GROUP NAME: A GROUP HAS NO NAME
+#Team members: Gintare Vavenkaite, Norma Panziera, Irene Taylor, George Shelton-Eckstein, Amartya Yadav. 
+
+#PLEASE READ THE README.MD IN THE REPOSITORY BEFORE RUNNING THE CODE. THE CODE WILL NOT RUN IF YOU RUN THE WHOLE CODE AT ONCE.
+
+
+
+
 #HEALTH FOR EACH CHARACTERS
 manman_health_multiplier = 1.0
 turtleboy_health_multiplier = 1.5
